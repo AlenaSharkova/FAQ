@@ -41,6 +41,9 @@ section {
                 align-items: center;
 
                 svg {
+                    .verticalLine{
+                        transition: transform 0.4s; // чтобы анимация была плавной в обе стороны (и чуть быстрее, но это уже косметика)
+                    }
                     line {
                         stroke-width: 10px;
                     }
@@ -55,16 +58,12 @@ section {
     }
 
     .faqBlock.active {
-        transform: scale(1.1);
+        // transform: scale(1.1); сбивает с мысли немного, лучше оставлять фак такого же размера)
 
         .iconBlock {
             svg {
                 .verticalLine {
-                    transition: transform 1s;
-                    transform: rotate(90deg) translateY(-120px);
-
-
-
+                    transform: rotate(90deg) translateY(-120px)
                 }
             }
         }

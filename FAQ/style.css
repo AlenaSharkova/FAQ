@@ -38,17 +38,16 @@ section .faqBlock .faqBlock__visible .iconBlock {
   padding: 10px;
   align-items: center;
 }
+section .faqBlock .faqBlock__visible .iconBlock svg .verticalLine {
+  transition: transform 0.4s;
+}
 section .faqBlock .faqBlock__visible .iconBlock svg line {
   stroke-width: 10px;
 }
 section .faqBlock .faqBlock__answer {
   display: none;
 }
-section .faqBlock.active {
-  transform: scale(1.1);
-}
 section .faqBlock.active .iconBlock svg .verticalLine {
-  transition: transform 1s;
   transform: rotate(90deg) translateY(-120px);
 }
 section .faqBlock.active .faqBlock__answer {
